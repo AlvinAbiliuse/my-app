@@ -1,0 +1,53 @@
+@font-face {
+	font-family: Fraunces;
+	src: url("/workitAssets/fonts/faunces/static/Fraunces_144pt-SemiBold.ttf");
+}
+
+#workit {
+	font-family: Fraunces, serif;
+	--purple-900: #24053e;
+	--white: #ffffff;
+	--green: #44ffa1;
+	background-color: var(--white);
+	color: black;
+	.heroNav {
+		padding: 50px 200px;
+		background-color: var(--purple-900);
+		color: var(--white);
+	}
+	.nav {
+		font-family: sans-serif;
+		width: 100%;
+		display: flex;
+		justify-content: space-between;
+	}
+	.nav a {
+		font-family: sans-serif;
+		font-weight: 500;
+		border-bottom: 3px solid var(--green);
+	}
+
+	h1 {
+		max-width: 630px;
+		text-align: center;
+		margin: 0 auto;
+		margin-top: 50px;
+		font-size: 80px;
+		line-height: 100%;
+		font-weight: normal;
+	}
+	h1 span {
+		border-bottom: 3px solid var(--green);
+	}
+	button {
+		display: block;
+		margin: 0 auto;
+		padding: 8px 20px;
+		background-color: var(--green);
+		color: black;
+	}
+
+	.heroImage {
+		margin: 0 auto;
+	}
+}
