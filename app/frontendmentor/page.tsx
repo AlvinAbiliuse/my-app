@@ -72,5 +72,4 @@ export default function FrontEndMentor() {
 			</Collapsible.Root>
 		</div>
 	);
-	new Splide(document.querySelector(".splide")).mount();
 }
