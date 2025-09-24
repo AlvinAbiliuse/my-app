@@ -9,7 +9,6 @@
 		text-align: center;
 		color: white;
 	}
-
 	.collapsibleBox {
 		width: 100%;
 	}
@@ -18,11 +17,19 @@
 		width: 100%;
 		text-align: left;
 		padding: 20px;
-		background-color: rgba(30, 30, 30);
 	}
+	.splide {
+		width: 400px;
+		margin: 0 auto;
+	}
+	.splide img {
+		width: 400px;
+	}
+	/*
 
 	.collapsiblePanel {
 		background-color: rgba(40, 40, 40);
 		padding: 20px;
 	}
+*/
 }
