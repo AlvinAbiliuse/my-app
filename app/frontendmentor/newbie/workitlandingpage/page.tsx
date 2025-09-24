@@ -1,8 +1,13 @@
+import Image from "next/image";
+
 function HeroNav() {
 	return (
 		<div className="heroNav">
 			<div className="nav">
-				<img
+				<Image
+					width={100}
+					height={50}
+					alt="image for the hero page"
 					src="/workitAssets/images/logo-light.svg"
 					className="companyLogo"
 				/>
@@ -13,12 +18,24 @@ function HeroNav() {
 					Data <span>tailored</span> to your needs
 				</h1>
 				<button>Learn more</button>
-				<img src="/workitAssets/images/image-hero.webp" className="heroImage" />
-				<img
+				<Image
+					width={600}
+					height={700}
+					alt="image for the hero page"
+					src="/workitAssets/images/image-hero.webp"
+					className="heroImage"
+				/>
+				<Image
+					width={300}
+					height={250}
+					alt="background swirl pattern"
 					src="/workitAssets/images/bg-pattern-1.svg"
 					className="floatingAssetLeft"
 				/>
-				<img
+				<Image
+					width={300}
+					height={250}
+					alt="background swirl pattern"
 					src="/workitAssets/images/bg-pattern-2.svg"
 					className="floatingAssetRight"
 				/>
@@ -63,7 +80,10 @@ function SecondSection() {
 function ThirdSection() {
 	return (
 		<div className="thirdSection">
-			<img
+			<Image
+				width={400}
+				height={400}
+				alt="image of the founder of the company"
 				src="/workitAssets/images/image-founder.webp"
 				className="profileImage"
 			/>
@@ -76,7 +96,10 @@ function ThirdSection() {
 					call.
 				</p>
 				<button>Apply for access</button>
-				<img
+				<Image
+					width={300}
+					height={250}
+					alt="background swirl pattern"
 					src="/workitAssets/images/bg-pattern-3.svg"
 					className="cardAsset"
 				/>
@@ -104,6 +127,7 @@ export default function Workit() {
 			<HeroNav />
 			<SecondSection />
 			<ThirdSection />
+			<Footer />
 		</div>
 	);
 }

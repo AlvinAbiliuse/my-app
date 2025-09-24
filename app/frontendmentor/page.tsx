@@ -2,7 +2,6 @@ import { Collapsible } from "@base-ui-components/react/collapsible";
 import "./styles.css";
 import "./collapsibleStyles.css";
 import Carousel from "./Carousel.jsx";
-import { initSplide } from "./Carousel.jsx";
 
 export function ChevronIcon(props: React.ComponentProps<"svg">) {
 	return (
