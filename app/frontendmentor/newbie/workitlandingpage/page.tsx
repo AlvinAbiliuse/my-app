@@ -1,6 +1,11 @@
 import Image from "next/image";
 import "./styles.css";
 
+export const metadata = {
+	title: "Workit Landing Page",
+	description: "Working Landing Page Challenge from the Front End Masters site",
+};
+
 function HeroNav() {
 	return (
 		<div className="heroNav">
@@ -44,9 +49,7 @@ function HeroNav() {
 function SecondSection() {
 	return (
 		<div className="secondSection">
-			<Image
-				width={800}
-				height={800}
+			<img
 				alt="image for the hero page"
 				src="/workitAssets/images/image-hero.webp"
 				className="heroImage"

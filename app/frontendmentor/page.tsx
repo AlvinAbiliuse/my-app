@@ -3,6 +3,11 @@ import "./styles.css";
 import "./collapsibleStyles.css";
 import Carousel from "./Carousel.jsx";
 
+export const metadata = {
+	title: "Front End Mentor Challenges",
+	description:
+		"Front End Mentor Challenges that are either completed or in progress",
+};
 export function ChevronIcon(props: React.ComponentProps<"svg">) {
 	return (
 		<svg width="10" height="10" viewBox="0 0 10 10" fill="none" {...props}>

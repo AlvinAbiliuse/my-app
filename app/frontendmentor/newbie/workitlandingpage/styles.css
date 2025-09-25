@@ -11,6 +11,7 @@
 	background-color: var(--white);
 	color: black;
 	.heroNav {
+		overflow: hidden;
 		position: relative;
 		padding: 50px 200px;
 		background-color: var(--purple-900);
@@ -27,17 +28,9 @@
 	.nav a {
 		font-family: sans-serif;
 		font-weight: 500;
-		border-bottom: 3px solid gray;
 		transition: 200ms ease;
-		padding-bottom: 4px;
-	}
-	.nav .link {
-		position: relative;
 	}
 	.nav .link div {
-		position: absolute;
-		bottom: 0;
-		left: 50%;
 		background-color: var(--green);
 		height: 3px;
 		width: 0;
@@ -46,7 +39,6 @@
 	}
 	.nav a:hover + div {
 		width: 100%;
-		left: 0;
 	}
 	.nav a:hover {
 		color: var(--green);
@@ -74,6 +66,7 @@
 		color: black;
 		border: 2px solid var(--green);
 		transition: all 0.3s ease;
+		border-radius: 5px;
 	}
 
 	button:hover {
@@ -102,7 +95,7 @@
 	}
 	.heroImage {
 		position: absolute;
-		max-width: 60em;
+		max-width: 700px;
 		top: -270px;
 		left: 25%;
 		margin: 20px;
