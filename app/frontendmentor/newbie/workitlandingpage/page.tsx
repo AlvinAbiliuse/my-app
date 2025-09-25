@@ -12,20 +12,16 @@ function HeroNav() {
 					src="/workitAssets/images/logo-light.svg"
 					className="companyLogo"
 				/>
-				<a href="#">Apply for access</a>
+				<div className="link">
+					<a href="#">Apply for access</a>
+					<div></div>
+				</div>
 			</div>
 			<div className="heroSection">
 				<h1>
 					Data <span>tailored</span> to your needs
 				</h1>
 				<button>Learn more</button>
-				<Image
-					width={600}
-					height={700}
-					alt="image for the hero page"
-					src="/workitAssets/images/image-hero.webp"
-					className="heroImage"
-				/>
 				<Image
 					width={300}
 					height={250}
@@ -34,8 +30,8 @@ function HeroNav() {
 					className="floatingAssetLeft"
 				/>
 				<Image
-					width={300}
-					height={250}
+					width={250}
+					height={200}
 					alt="background swirl pattern"
 					src="/workitAssets/images/bg-pattern-2.svg"
 					className="floatingAssetRight"
@@ -48,6 +44,13 @@ function HeroNav() {
 function SecondSection() {
 	return (
 		<div className="secondSection">
+			<Image
+				width={800}
+				height={800}
+				alt="image for the hero page"
+				src="/workitAssets/images/image-hero.webp"
+				className="heroImage"
+			/>
 			<div className="card">
 				<p className="number">1</p>
 				<h3>Actionable insights</h3>

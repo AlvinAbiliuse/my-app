@@ -11,9 +11,12 @@
 	background-color: var(--white);
 	color: black;
 	.heroNav {
+		position: relative;
 		padding: 50px 200px;
 		background-color: var(--purple-900);
 		color: var(--white);
+		padding-bottom: 300px;
+		clip-path: ellipse(100% 100% at top);
 	}
 	.nav {
 		font-family: sans-serif;
@@ -24,7 +27,29 @@
 	.nav a {
 		font-family: sans-serif;
 		font-weight: 500;
-		border-bottom: 3px solid var(--green);
+		border-bottom: 3px solid gray;
+		transition: 200ms ease;
+		padding-bottom: 4px;
+	}
+	.nav .link {
+		position: relative;
+	}
+	.nav .link div {
+		position: absolute;
+		bottom: 0;
+		left: 50%;
+		background-color: var(--green);
+		height: 3px;
+		width: 0;
+		transition: all 200ms ease;
+		margin: 0 auto;
+	}
+	.nav a:hover + div {
+		width: 100%;
+		left: 0;
+	}
+	.nav a:hover {
+		color: var(--green);
 	}
 
 	h1 {
@@ -33,21 +58,69 @@
 		margin: 0 auto;
 		margin-top: 50px;
 		font-size: 80px;
-		line-height: 100%;
+		line-height: 105%;
 		font-weight: normal;
 	}
 	h1 span {
 		border-bottom: 3px solid var(--green);
 	}
 	button {
+		font-family: sans-serif;
 		display: block;
-		margin: 0 auto;
-		padding: 8px 20px;
+		margin: 30px auto;
+		font-size: 20px;
+		padding: 10px 25px;
 		background-color: var(--green);
 		color: black;
+		border: 2px solid var(--green);
+		transition: all 0.3s ease;
 	}
 
+	button:hover {
+		cursor: pointer;
+		background-color: transparent;
+		color: var(--green);
+	}
+
+	.floatingAssetLeft {
+		position: absolute;
+		top: 20%;
+		left: -5%;
+		animation: bounceOne 1s ease infinite alternate;
+	}
+
+	.floatingAssetRight {
+		position: absolute;
+		top: 40%;
+		right: -5%;
+		animation: bounceTwo 1s ease infinite alternate;
+	}
+
+	.secondSection {
+		padding-top: 300px;
+		position: relative;
+	}
 	.heroImage {
-		margin: 0 auto;
+		position: absolute;
+		max-width: 60em;
+		top: -270px;
+		left: 25%;
+		margin: 20px;
+	}
+}
+@keyframes bounceOne {
+	0% {
+		top: 20%;
+	}
+	100% {
+		top: 18%;
+	}
+}
+@keyframes bounceTwo {
+	0% {
+		top: 40%;
+	}
+	100% {
+		top: 38%;
 	}
 }
